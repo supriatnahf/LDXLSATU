@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XL Satu Batam — WiFi Rumah Cepat & Stabil | Area Batam</title>
+<meta name="description" content="Internet rumah fiber optik XL Satu khusus area Batam. Mulai Rp 159.000/bulan. Gratis STB TV + 20 Channel. Bonus Double Speed 6 bulan. Hubungi 085175037424.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Plus Jakarta Sans',sans-serif; background:#fff; color:#0A1C3E; overflow-x:hidden; }
+
+/* NAV */
+nav { display:flex; justify-content:space-between; align-items:center; padding:16px 40px; background:#fff; position:sticky; top:0; z-index:100; border-bottom:1px solid #E8EEF6; box-shadow:0 1px 8px rgba(0,0,0,0.05); }
+.logo { display:flex; align-items:center; gap:10px; }
+.logo-xl { font-size:26px; font-weight:800; color:#005FCC; font-style:italic; }
+.logo-satu { font-size:22px; font-weight:800; color:#00A878; }
+.logo-satu .one { background:#00A878; color:#fff; border-radius:4px; padding:0 3px; }
+.logo-area { font-size:11px; font-weight:700; color:#fff; background:#005FCC; padding:3px 8px; border-radius:4px; margin-left:6px; letter-spacing:0.5px; }
+.nav-right { display:flex; align-items:center; gap:12px; }
+.nav-wa { display:flex; align-items:center; gap:6px; font-size:14px; font-weight:600; color:#00A878; text-decoration:none; }
+.nav-wa svg { width:18px; height:18px; fill:#00A878; }
+.nav-cta { background:#005FCC; color:#fff; border:none; padding:10px 22px; border-radius:8px; font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; text-decoration:none; display:inline-block; }
+.nav-cta:hover { background:#0047A8; }
+
+/* PROMO BANNER */
+.promo-banner { background:#005FCC; color:#fff; text-align:center; padding:10px 20px; }
+.promo-banner p { font-size:13px; font-weight:600; }
+.promo-banner .highlight { background:#FFCA28; color:#7A5200; padding:2px 10px; border-radius:4px; margin-left:8px; font-weight:700; font-size:12px; }
+
+/* HERO */
+.hero { background:linear-gradient(160deg,#EAF2FF 0%,#F0FFF8 100%); padding:60px 40px 52px; text-align:center; }
+.hero-badge { display:inline-flex; align-items:center; gap:6px; background:#FFF3CD; border:1px solid #FFCA28; color:#7A5200; padding:5px 14px; border-radius:20px; font-size:13px; font-weight:700; margin-bottom:20px; }
+.badge-dot { width:6px; height:6px; background:#FFCA28; border-radius:50%; animation:pulse 1.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+.wifi-anim { margin:0 auto 24px; display:flex; justify-content:center; }
+.wanim { position:relative; width:90px; height:72px; }
+.arc { position:absolute; border:3px solid transparent; border-top-color:#005FCC; border-radius:50%; }
+.arc1 { width:26px;height:26px;top:46px;left:32px; animation:ap 1.4s ease-in-out infinite; }
+.arc2 { width:48px;height:48px;top:36px;left:21px; animation:ap 1.4s ease-in-out infinite 0.18s; border-top-color:#0080FF; }
+.arc3 { width:70px;height:70px;top:26px;left:10px; animation:ap 1.4s ease-in-out infinite 0.36s; border-top-color:#00C6FF; }
+.arc-dot { width:9px;height:9px;background:#005FCC;border-radius:50%;position:absolute;bottom:2px;left:40px;box-shadow:0 0 10px #005FCC; }
+@keyframes ap { 0%,100%{opacity:0.25} 50%{opacity:1} }
+
+.hero h1 { font-size:48px; font-weight:800; line-height:1.1; letter-spacing:-1.5px; color:#0A1C3E; margin-bottom:12px; }
+.hero h1 .blue { color:#005FCC; }
+.hero h1 .green { color:#00A878; }
+.hero-sub { font-size:17px; color:#4A6080; line-height:1.6; max-width:500px; margin:0 auto 28px; }
+.hero-area { display:inline-flex; align-items:center; gap:6px; background:#fff; border:1.5px solid #D0DCF0; border-radius:8px; padding:8px 16px; font-size:14px; font-weight:600; color:#0A1C3E; margin-bottom:28px; }
+
+.hero-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.btn-wa { display:inline-flex; align-items:center; gap:8px; background:#25D366; color:#fff; border:none; padding:14px 28px; border-radius:10px; font-weight:700; font-size:15px; cursor:pointer; font-family:inherit; text-decoration:none; }
+.btn-wa:hover { background:#1EB854; }
+.btn-wa svg { width:20px; height:20px; fill:#fff; flex-shrink:0; }
+.btn-ghost { background:transparent; color:#005FCC; border:2px solid #005FCC; padding:13px 28px; border-radius:10px; font-weight:600; font-size:15px; cursor:pointer; font-family:inherit; }
+.btn-ghost:hover { background:#EAF2FF; }
+
+/* STATS */
+.stats-bar { display:flex; justify-content:center; gap:48px; padding:28px 40px; border-top:1px solid #E8EEF6; border-bottom:1px solid #E8EEF6; flex-wrap:wrap; background:#fff; }
+.stat { text-align:center; }
+.stat-num { font-size:26px; font-weight:800; color:#005FCC; }
+.stat-label { font-size:12px; color:#7A90B0; margin-top:2px; font-weight:500; }
+
+/* SECTION */
+.section { padding:60px 40px; max-width:980px; margin:0 auto; }
+.sec-label { text-align:center; font-size:11px; font-weight:700; letter-spacing:2.5px; color:#005FCC; text-transform:uppercase; margin-bottom:10px; }
+.sec-title { text-align:center; font-size:30px; font-weight:800; letter-spacing:-0.6px; margin-bottom:6px; }
+.sec-sub { text-align:center; color:#4A6080; font-size:15px; margin-bottom:40px; }
+
+/* TABS */
+.tabs { display:flex; gap:8px; justify-content:center; margin-bottom:32px; flex-wrap:wrap; }
+.tab { padding:9px 20px; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer; border:2px solid #D0DCF0; color:#4A6080; background:#fff; font-family:inherit; transition:all 0.15s; }
+.tab.active { background:#005FCC; color:#fff; border-color:#005FCC; }
+.tab-panel { display:none; }
+.tab-panel.active { display:block; }
+
+/* PACKAGES */
+.pkg-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+.pkg { background:#fff; border:1.5px solid #D0DCF0; border-radius:16px; padding:24px 22px; position:relative; transition:all 0.2s; }
+.pkg:hover { border-color:#005FCC; box-shadow:0 4px 20px rgba(0,95,204,0.12); transform:translateY(-2px); }
+.pkg.featured { border:2.5px solid #005FCC; background:#F4F9FF; }
+.pkg-badge { position:absolute; top:-13px; left:50%; transform:translateX(-50%); background:#005FCC; color:#fff; padding:4px 14px; border-radius:20px; font-size:11px; font-weight:700; white-space:nowrap; letter-spacing:0.5px; }
+.pkg-tag { font-size:11px; font-weight:700; color:#4A6080; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px; }
+.pkg-name { font-size:16px; font-weight:700; color:#0A1C3E; margin-bottom:14px; }
+.pkg-speed-old { font-size:13px; color:#bbb; text-decoration:line-through; margin-bottom:2px; }
+.pkg-speed { font-size:48px; font-weight:800; color:#005FCC; line-height:1; letter-spacing:-2px; }
+.pkg-speed small { font-size:16px; font-weight:600; color:#4A6080; }
+.pkg-divider { height:1px; background:#E8EEF6; margin:18px 0; }
+.pkg-price-old { font-size:12px; color:#bbb; text-decoration:line-through; margin-bottom:2px; }
+.pkg-price { font-size:26px; font-weight:800; color:#0A1C3E; }
+.pkg-price small { font-size:13px; font-weight:400; color:#4A6080; }
+.pkg-note { font-size:11px; color:#4A6080; margin-top:4px; line-height:1.5; }
+.pkg-features { list-style:none; margin:14px 0 20px; display:flex; flex-direction:column; gap:7px; }
+.pkg-features li { font-size:13px; color:#2E4060; display:flex; align-items:flex-start; gap:7px; line-height:1.4; }
+.pkg-features li::before { content:"✓"; color:#00A878; font-weight:700; font-size:13px; flex-shrink:0; margin-top:1px; }
+.pkg-btn { width:100%; padding:12px; border-radius:8px; font-weight:700; font-size:14px; cursor:pointer; font-family:inherit; border:none; display:flex; align-items:center; justify-content:center; gap:7px; text-decoration:none; }
+.btn-blue { background:#005FCC; color:#fff; }
+.btn-blue:hover { background:#0047A8; }
+.btn-outline { background:transparent; color:#005FCC; border:1.5px solid #005FCC; }
+.btn-outline:hover { background:#EAF2FF; }
+.btn-green { background:#25D366; color:#fff; }
+.btn-green:hover { background:#1EB854; }
+.btn-green svg { width:16px; height:16px; fill:#fff; }
+
+/* BONUS */
+.bonus-bg { background:#EAF2FF; padding:56px 40px; }
+.bonus-inner { max-width:900px; margin:0 auto; }
+.bonus-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:32px; }
+.bonus-card { background:linear-gradient(135deg,#0047A8,#005FCC); color:#fff; border-radius:14px; padding:24px 20px; text-align:center; }
+.bonus-card h3 { font-size:15px; font-weight:700; margin-bottom:6px; }
+.bonus-card p { font-size:13px; opacity:0.8; line-height:1.5; }
+.bonus-num { font-size:38px; font-weight:800; color:#FFCA28; line-height:1; margin:6px 0 4px; }
+
+/* BENEFITS */
+.benefits-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:16px; }
+.benefit { background:#F6F9FF; border:1px solid #E0EAF8; border-radius:14px; padding:20px; }
+.benefit-icon { font-size:26px; margin-bottom:10px; }
+.benefit h3 { font-size:14px; font-weight:700; color:#0A1C3E; margin-bottom:5px; }
+.benefit p { font-size:12px; color:#4A6080; line-height:1.55; }
+
+/* STEPS */
+.steps { display:flex; gap:0; flex-wrap:wrap; justify-content:center; }
+.step { flex:1; min-width:140px; max-width:180px; text-align:center; padding:0 14px; position:relative; }
+.step:not(:last-child)::after { content:"→"; position:absolute; right:-8px; top:22px; font-size:18px; color:#C0CDE0; }
+.step-num { width:50px; height:50px; border-radius:50%; background:#EAF2FF; border:2px solid #005FCC; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; color:#005FCC; margin:0 auto 12px; }
+.step h3 { font-size:13px; font-weight:700; color:#0A1C3E; margin-bottom:5px; }
+.step p { font-size:12px; color:#4A6080; line-height:1.5; }
+
+/* CONTACT SALES */
+.sales-section { background:linear-gradient(135deg,#0A1C3E,#005FCC); padding:56px 40px; text-align:center; }
+.sales-inner { max-width:700px; margin:0 auto; }
+.sales-section h2 { font-size:32px; font-weight:800; color:#fff; letter-spacing:-0.6px; margin-bottom:10px; }
+.sales-section p { color:rgba(255,255,255,0.65); font-size:15px; margin-bottom:36px; }
+.sales-cards { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:28px; }
+.sales-card { background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:14px; padding:20px 24px; min-width:220px; text-align:center; }
+.sales-card-label { font-size:11px; font-weight:700; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:10px; }
+.sales-card a { color:#FFCA28; font-size:20px; font-weight:800; text-decoration:none; display:block; margin-bottom:4px; }
+.sales-card a:hover { color:#FFD740; }
+.sales-card .sales-email { font-size:14px; font-weight:500; color:rgba(255,255,255,0.7); }
+.wa-big { display:inline-flex; align-items:center; gap:10px; background:#25D366; color:#fff; border:none; padding:16px 36px; border-radius:12px; font-weight:700; font-size:17px; cursor:pointer; font-family:inherit; text-decoration:none; }
+.wa-big:hover { background:#1EB854; }
+.wa-big svg { width:24px; height:24px; fill:#fff; }
+.sales-note { margin-top:20px; font-size:12px; color:rgba(255,255,255,0.35); }
+
+/* FOOTER */
+footer { background:#0A1C3E; padding:32px 40px; }
+.footer-inner { max-width:900px; margin:0 auto; }
+.footer-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px; margin-bottom:24px; }
+.footer-logo { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.footer-xl { font-size:22px; font-weight:800; color:#fff; font-style:italic; }
+.footer-satu { font-size:18px; font-weight:800; color:#00A878; }
+.footer-satu .one { background:#00A878; color:#fff; border-radius:3px; padding:0 3px; }
+.footer-desc { font-size:13px; color:rgba(255,255,255,0.45); line-height:1.6; max-width:280px; }
+.footer-links h4 { font-size:13px; font-weight:700; color:#fff; margin-bottom:12px; text-transform:uppercase; letter-spacing:1px; }
+.footer-links ul { list-style:none; display:flex; flex-direction:column; gap:8px; }
+.footer-links ul li a { font-size:13px; color:rgba(255,255,255,0.5); text-decoration:none; }
+.footer-links ul li a:hover { color:#fff; }
+.footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding-top:20px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+.footer-bottom p { font-size:12px; color:rgba(255,255,255,0.3); }
+
+@media(max-width:700px) {
+  nav { padding:14px 20px; }
+  .nav-wa { display:none; }
+  .hero { padding:44px 20px 40px; }
+  .hero h1 { font-size:32px; }
+  .section { padding:44px 20px; }
+  .stats-bar { gap:24px; padding:24px 20px; }
+  .step:not(:last-child)::after { display:none; }
+  .bonus-bg { padding:44px 20px; }
+  .sales-section { padding:44px 20px; }
+  footer { padding:28px 20px; }
+  .footer-top { flex-direction:column; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <span class="logo-xl">xl</span>
+    <span class="logo-satu">sa<span class="one">1</span>u</span>
+    <span class="logo-area">BATAM</span>
+  </div>
+  <div class="nav-right">
+    <a class="nav-wa" href="https://wa.me/6285175037424" target="_blank">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.073-1.115l-.292-.174-3.024.854.854-3.104-.19-.306A7.944 7.944 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/></svg>
+      085175037424
+    </a>
+    <a class="nav-cta" href="https://wa.me/6285175037424?text=Halo,%20saya%20ingin%20tanya%20paket%20XL%20Satu%20Batam" target="_blank">Daftar Sekarang</a>
+  </div>
+</nav>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+  <p>🎉 Promo Terbatas 2026 — Instalasi GRATIS + Bonus Double Speed 6 Bulan + Gratis STB TV! <span class="highlight">Khusus Batam</span></p>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge"><div class="badge-dot"></div> PROMO TERBATAS · KHUSUS AREA BATAM</div>
+  <div class="wifi-anim">
+    <div class="wanim">
+      <div class="arc arc3"></div>
+      <div class="arc arc2"></div>
+      <div class="arc arc1"></div>
+      <div class="arc-dot"></div>
+    </div>
+  </div>
+  <h1>WiFi Rumah <span class="green">Andalan</span><br>dari <span class="blue">XL Satu</span></h1>
+  <div class="hero-area">📍 Melayani Area Batam & Sekitarnya</div>
+  <p class="hero-sub">Internet cepat, stabil, anti lemot berbasis fiber optik. Bonus Double Speed &amp; Gratis STB TV + 20 Channel Freemium.</p>
+  <div class="hero-btns">
+    <a class="btn-wa" href="https://wa.me/6285175037424?text=Halo%20Suprie,%20saya%20ingin%20tanya%20paket%20XL%20Satu%20Batam" target="_blank">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.073-1.115l-.292-.174-3.024.854.854-3.104-.19-.306A7.944 7.944 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/></svg>
+      Chat WhatsApp Sekarang
+    </a>
+    <button class="btn-ghost" onclick="document.querySelector('.pkg-grid').scrollIntoView({behavior:'smooth'})">Lihat Paket</button>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Fiber Optik</div></div>
+  <div class="stat"><div class="stat-num">99.9%</div><div class="stat-label">Uptime Jaringan</div></div>
+  <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Dukungan Teknis</div></div>
+  <div class="stat"><div class="stat-num">&lt;3 hari</div><div class="stat-label">Proses Instalasi</div></div>
+</div>
+
+<!-- PAKET -->
+<div class="section">
+  <div class="sec-label">Paket Internet Rumah</div>
+  <h2 class="sec-title">Pilih Paket Terbaik untuk Keluarga</h2>
+  <p class="sec-sub">Harga sudah termasuk semua biaya · Tanpa PPN · Promo untuk pelanggan baru</p>
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('bulanan',this)">Bayar Bulanan</button>
+    <button class="tab" onclick="showTab('promo4bln',this)">Bayar 4 Bulan (Hemat!)</button>
+    <button class="tab" onclick="showTab('starter',this)">Paket Starter</button>
+  </div>
+
+  <!-- TAB BULANAN -->
+  <div class="tab-panel active" id="tab-bulanan">
+    <div class="pkg-grid">
+      <div class="pkg">
+        <div class="pkg-tag">Paket Spark</div>
+        <div class="pkg-name">XL Satu 250 Mbps</div>
+        <div class="pkg-speed-old">100 Mbps</div>
+        <div class="pkg-speed">250 <small>Mbps</small></div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-price">Rp 229.000 <small>/bulan</small></div>
+        <div class="pkg-note">Speed Boost hingga 250 Mbps · Instalasi GRATIS</div>
+        <ul class="pkg-features">
+          <li>Cocok untuk 3–4 pengguna</li>
+          <li>Streaming HD & browsing lancar</li>
+          <li>Gratis STB TV + 20 Channel</li>
+          <li>Bonus 2x Speed selama 6 bulan</li>
+          <li>Tanpa PPN</li>
+        </ul>
+        <a class="pkg-btn btn-outline" href="https://wa.me/6285175037424?text=Halo%20Suprie,%20saya%20minat%20paket%20XL%20Satu%20250%20Mbps%20Rp%20229.000/bulan%20di%20Batam" target="_blank">Tanya via WhatsApp</a>
+      </div>
+
+      <div class="pkg featured">
+        <div class="pkg-badge">⭐ BEST SELLER</div>
+        <div class="pkg-tag">Paket Spark</div>
+        <div class="pkg-name">XL Satu 350 Mbps</div>
+        <div class="pkg-speed-old">150 Mbps</div>
+        <div class="pkg-speed">350 <small>Mbps</small></div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-price">Rp 279.000 <small>/bulan</small></div>
+        <div class="pkg-note">Speed Boost hingga 350 Mbps · Instalasi GRATIS</div>
+        <ul class="pkg-features">
+          <li>Cocok untuk 5–7 pengguna</li>
+          <li>Streaming 4K & gaming online</li>
+          <li>Gratis STB TV + 20 Channel</li>
+          <li>Bonus 2x Speed selama 6 bulan</li>
+          <li>Tanpa PPN</li>
+        </ul>
+        <a class="pkg-btn btn-green" href="https://wa.me/6285175037424?text=Halo%20Suprie,%20saya%20minat%20paket%20XL%20Satu%20350%20Mbps%20Rp%20279.000/bulan%20di%20Batam" target="_blank">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.073-1.115l-.292-.174-3.024.854.854-3.104-.19-.306A7.944 7.944 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/></svg>
+          Pesan via WhatsApp
+        </a>
+      </div>
+
+      <div class="pkg">
+        <div class="pkg-tag">Paket Spark</div>
+        <div class="pkg-name">XL Satu 400 Mbps</div>
+        <div class="pkg-speed-old">300 Mbps</div>
+        <div class="pkg-speed">400 <small>Mbps</small></div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-price">Rp 300.000 <small>/bulan</small></div>
+        <div class="pkg-note">Speed Boost hingga 400 Mbps · Instalasi GRATIS</div>
+        <ul class="pkg-features">
+          <li>Untuk keluarga besar & WFH</li>
+          <li>Multi-device tanpa lag sama sekali</li>
+          <li>Gratis STB TV + 20 Channel</li>
+          <li>Bonus 2x Speed selama 6 bulan</li>
+          <li>Tanpa PPN</li>
+        </ul>
+        <a class="pkg-btn btn-outline" href="https://wa.me/6285175037424?text=Halo%20Suprie,%20saya%20minat%20paket%20XL%20Satu%20400%20Mbps%20Rp%20300.000/bulan%20di%20Batam" target="_blank">Tanya via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB PROMO 4 BULAN -->
+  <div class="tab-panel" id="tab-promo4bln">
+    <p style="text-align:center;font-size:14px;color:#005FCC;font-weight:600;margin-bottom:24px;">Bayar 4 bulan sekaligus, lebih hemat! Bonus Vidio Lite & Catchplay+ 3 bulan gratis.</p>
+    <div class="pkg-grid" style="max-width:540px;margin:0 auto;">
+      <div class="pkg">
+        <div class="pkg-tag">Paket 4 Bulanan</div>
+        <div class="pkg-name">XL Satu 50 Mbps</div>
+        <div class="pkg-speed">50 <small>Mbps</small></div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-price-old">Normal Rp 800.000</div>
+        <div class="pkg-price">Rp 650.000 <small>/4 bulan</small></div>
+        <div class="pkg-note">Setara Rp 162.500/bln · Bulan ke-5: Rp 200.000/bln · Tanpa PPN</div>
+        <ul class="pkg-features">
+          <li>Bonus Vidio Lite 3 bulan</li>
+          <li>Bonus Catchplay+ 3 bulan</li>
+          <li>Instalasi GRATIS</li>
+        </ul>
+        <a class="pkg-btn btn-outline" href="https://wa.me/6285175037424?text=Halo%20Suprie,%20saya%20minat%20paket%20XL%20Satu%2050%20Mbps%204%20bulan%20Rp%20650.000%20di%20Batam" target="_blank">Tanya via WhatsApp</a>
+      </div>
+      <div class="pkg featured">
+        <div class="pkg-badge">⭐ PALING HEMAT</div>
+        <div class="pkg-tag">Paket 4 Bulanan</div>
+        <div class="pkg-name">XL Satu 100 Mbps</div>
+        <div class="pkg-speed">100 <small>Mbps</small></div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-price-old">Normal Rp 1.000.000</div>
+        <div class="pkg-price">Rp 790.000 <small>/4 bulan</small></div>
+        <div class="pkg-note">Setara Rp 197.500/bln · Bulan ke-5: Rp 219.000/bln · Tanpa PPN</div>
+        <ul class="pkg-features">
+          <li>Bonus Vidio Lite 3 bulan</li>
+          <li>Bonus Catchplay+ 3 bulan</li>
+          <li>Instalasi GRATIS</li>
+        </ul>
+        <a class="pkg-btn btn-green" href="https://wa.me/6285175037424?text=Halo%20Suprie,%20saya%20minat%20paket%20XL%20Satu%20100%20Mbps%204%20bulan%20Rp%20790.000%20di%20Batam" target="_blank">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.073-1.115l-.292-.174-3.024.854.854-3.104-.19-.306A7.944 7.944 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/></svg>
+          Pesan via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB STARTER -->
+  <div class="tab-panel" id="tab-starter">
+    <div class="pkg-grid" style="max-width:340px;margin:0 auto;">
+      <div class="pkg">
+        <div class="pkg-tag">Paket Starter</div>
+        <div class="pkg-name">XL Satu 20 Mbps</div>
+        <div class="pkg-speed">20 <small>Mbps</small></div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-price-old" style="font-size:14px;color:#bbb;text-decoration:line-through;">Normal Rp 189.000/bulan</div>
+        <div class="pkg-price">Rp 159.000 <small>/bulan</small></div>
+        <div class="pkg-note">Biaya instalasi Rp 100.000 · Kuota HP Keluarga 8 GB/bln · Tanpa PPN · Harga promo 12 bulan pertama</div>
+        <ul class="pkg-features">
+          <li>Cocok untuk 2–3 pengguna</li>
+          <li>Streaming & browsing harian</li>
+          <li>Bonus kuota HP 8 GB/bulan</li>
+        </ul>
+        <a class="pkg-btn btn-green" href="https://wa.me/6285175037424?text=Halo%20Suprie,%20saya%20minat%20paket%20XL%20Satu%20Starter%2020%20Mbps%20Rp%20159.000/bulan%20di%20Batam" target="_blank">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.073-1.115l-.292-.174-3.024.854.854-3.104-.19-.306A7.944 7.944 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/></svg>
+          Pesan via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BONUS -->
+<div class="bonus-bg">
+  <div class="bonus-inner">
+    <div class="sec-label" style="text-align:center;">Bonus Eksklusif</div>
+    <h2 class="sec-title" style="text-align:center;">Dapat Bonus Langsung</h2>
+    <div class="bonus-row">
+      <div class="bonus-card">
+        <h3>📺 Gratis STB TV</h3>
+        <div class="bonus-num">20</div>
+        <p>Channel Freemium gratis<br>untuk semua paket</p>
+      </div>
+      <div class="bonus-card">
+        <h3>⚡ Bonus Double Speed</h3>
+        <div class="bonus-num">2x</div>
+        <p>Kecepatan 2x lipat<br>selama 6 bulan pertama</p>
+      </div>
+      <div class="bonus-card">
+        <h3>🎬 Streaming Premium</h3>
+        <div class="bonus-num">3 bln</div>
+        <p>Vidio Lite & Catchplay+<br>untuk paket 4 bulanan</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- KEUNGGULAN -->
+<div class="section">
+  <div class="sec-label">Keunggulan</div>
+  <h2 class="sec-title">Kenapa Pilih XL Satu?</h2>
+  <p class="sec-sub">Fiber optik 100% — Internet Cepat · Stabil · Anti Lemot</p>
+  <div class="benefits-grid">
+    <div class="benefit">
+      <div class="benefit-icon">🔌</div>
+      <h3>Fiber Optik 100%</h3>
+      <p>FTTH langsung ke rumah, bukan kabel tembaga. Stabil di segala cuaca.</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">📶</div>
+      <h3>Sinyal Kuat Seluruh Rumah</h3>
+      <p>Jangkauan luas, anti-drop, tanpa dead zone di sudut rumah.</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">∞</div>
+      <h3>Tanpa Batas & Tanpa FUP</h3>
+      <p>Kecepatan konsisten sepanjang bulan tanpa batasan tersembunyi.</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">🎮</div>
+      <h3>Gaming & Streaming Lancar</h3>
+      <p>Ping rendah, cocok untuk gaming online dan nonton 4K tanpa buffer.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CARA DAFTAR -->
+<div class="section" style="padding-top:0">
+  <div class="sec-label">Cara Berlangganan</div>
+  <h2 class="sec-title">Proses Cepat & Mudah</h2>
+  <p class="sec-sub">Internet aktif dalam 3 hari kerja setelah pendaftaran</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Chat WhatsApp</h3>
+      <p>Hubungi Suprie untuk konsultasi & pilih paket</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Isi Data</h3>
+      <p>Nama, alamat, dan nomor HP aktif di Batam</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Survei Lokasi</h3>
+      <p>Tim kami cek kelayakan pasang gratis</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Internet Aktif!</h3>
+      <p>Teknisi instalasi, langsung bisa dipakai</p>
+    </div>
+  </div>
+</div>
+
+<!-- SALES CONTACT -->
+<div class="sales-section">
+  <div class="sales-inner">
+    <h2>Hubungi Sales Batam</h2>
+    <p>Konsultasi gratis, tanpa tekanan beli. Kami siap bantu pilih paket yang pas untuk rumah kamu.</p>
+    <div class="sales-cards">
+      <div class="sales-card">
+        <div class="sales-card-label">📞 WhatsApp / Telepon</div>
+        <a href="tel:085175037424">085175037424</a>
+        <div class="sales-email">Suprie — Sales XL Satu Batam</div>
+      </div>
+      <div class="sales-card">
+        <div class="sales-card-label">📧 Email</div>
+        <a href="mailto:suprie@gmail.com" style="font-size:16px;">suprie@gmail.com</a>
+        <div class="sales-email">Balasan dalam 1 jam kerja</div>
+      </div>
+    </div>
+    <a class="wa-big" href="https://wa.me/6285175037424?text=Halo%20Suprie,%20saya%20ingin%20tanya%20paket%20XL%20Satu%20untuk%20area%20Batam" target="_blank">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.073-1.115l-.292-.174-3.024.854.854-3.104-.19-.306A7.944 7.944 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/></svg>
+      Mulai Chat WhatsApp
+    </a>
+    <div class="sales-note">Khusus Area Batam · Gratis Konsultasi · Tanpa Tekanan Beli</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <span class="footer-xl">xl</span>
+          <span class="footer-satu">sa<span class="one">1</span>u</span>
+          <span style="font-size:11px;font-weight:700;background:#005FCC;color:#fff;padding:3px 8px;border-radius:4px;margin-left:6px;">BATAM</span>
+        </div>
+        <p class="footer-desc">Internet rumah fiber optik cepat dan stabil khusus area Batam. Produk resmi XL Axiata — XLSMART.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="tel:085175037424">📞 085175037424</a></li>
+          <li><a href="mailto:suprie@gmail.com">📧 suprie@gmail.com</a></li>
+          <li><a href="https://wa.me/6285175037424" target="_blank">💬 WhatsApp Suprie</a></li>
+          <li><a href="https://satu.xl.co.id" target="_blank">🌐 satu.xl.co.id</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#tab-bulanan">Paket Bulanan</a></li>
+          <li><a href="#tab-promo4bln">Paket 4 Bulan</a></li>
+          <li><a href="#tab-starter">Paket Starter</a></li>
+          <li><a href="https://wa.me/6285175037424" target="_blank">Cara Daftar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 XL Satu Batam · Sales resmi XL Axiata area Batam · Harga tanpa PPN · Promo untuk pelanggan baru · Berlaku di area Batam</p>
+      <p>Suprie — 085175037424 · suprie@gmail.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function showTab(id, el) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
